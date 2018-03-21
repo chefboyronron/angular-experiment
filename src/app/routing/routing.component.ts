@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoutingComponent implements OnInit {
 
+  persons = [
+    {
+      id: 1,
+      name: 'Ron',
+    },
+    {
+      id: 2,
+      name: 'Kyle',
+    }
+  ];
+
   constructor() { }
 
   ngOnInit() {

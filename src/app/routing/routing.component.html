@@ -1,3 +1,12 @@
-<p>
-  routing works!
-</p>
+<div class="container">
+  <div class="col-md-3">
+    <h3>Routing Parent</h3>
+    <div class="btn-group-vertical  btn-block">
+      <a [routerLink]="['/route', person.id, person.name]" *ngFor="let person of persons" class="btn btn-default">{{ person.name }}</a>
+    </div>
+
+  </div>
+  <div class="col-md-9">
+      <router-outlet></router-outlet>
+    </div>
+</div>
